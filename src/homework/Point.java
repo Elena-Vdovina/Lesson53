@@ -13,11 +13,11 @@ public class Point {
     this.y = y;
   }
 
-  public int getX() {
+  public  int getX() {
     return x;
   }
 
-  public int getY() {
+  public  int getY() {
     return y;
   }
 
@@ -40,5 +40,10 @@ public class Point {
     // "x, y" -> " y" -> "y" -> y
     int y = Integer.parseInt(coordinates.substring(sepIndex + 1).trim());
     return new Point(x, y);
+  }
+
+  @Override
+  public  String toString() {
+    return "(" + this.x + "," + this.y + ")";
   }
 }
