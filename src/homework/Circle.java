@@ -18,14 +18,14 @@ public class Circle {
   public static void check(int r, Point point) {
     int x = point.getX();
     int y = point.getY();
-    double r1 = Math.sqrt(x * x + y * y);
-    if (r1 < (double) r) {
+    int r1 = x * x + y * y;
+    if (r1 < r*r) {  // сравниваем квадраты
       System.out.println("Точка " + point.toString() + " лежит внутри окружности радиусом " + r);
     }
-    if (r1 == (double) r) {
+    if (r1 == r*r) {
       System.out.println("Точка " + point.toString() + " лежит на окружности радиусом " + r);
     }
-    if (r1 > (double) r) {
+    if (r1 > r*r) {
       System.out.println("Точка " + point.toString() + " лежит вне окружности радиусом " + r);
     }
   }

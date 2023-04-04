@@ -20,10 +20,10 @@ public class Quarter {
       System.out.println("Точка " + point.toString() + " является центром координат");
     }
     if (x == 0 && y != 0) {
-      System.out.println("Точка " + point.toString() + " лежит на оси Х");
+      System.out.println("Точка " + point.toString() + " лежит на оси Y");
     }
     if (y == 0 && x != 0) {
-      System.out.println("Точка " + point.toString() + " лежит на оси Y");
+      System.out.println("Точка " + point.toString() + " лежит на оси X");
     }
     if (x > 0 && y > 0) {
       System.out.println("Точка " + point.toString() + " лежит в координатной четверти I");
